@@ -83,13 +83,14 @@ jobs:
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
           URL_SERVER: ${{ secrets.URL_SERVER }}
           KAFKA_ADDR: ${{ secrets.KAFKA_ADDR }}
+          POSTGRES_PASSWORD: ${{secrets.POSTGRES_PASSWORD}}
 
         with:
           host: ${{ secrets.LIGHTSAIL_HOST }}
           username: ubuntu
           key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
 
-          envs: IMAGE_TAG,GITHUB_ACTOR,GITHUB_TOKEN,DATABASE_URL,REDIS_PASSWORD,JWT_SECRET,URL_SERVER,KAFKA_ADDR
+          envs: IMAGE_TAG,GITHUB_ACTOR,GITHUB_TOKEN,DATABASE_URL,REDIS_PASSWORD,JWT_SECRET,URL_SERVER,KAFKA_ADDR,POSTGRES_PASSWORD
 
           script: |
             set -e

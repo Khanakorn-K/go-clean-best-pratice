@@ -996,8 +996,8 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version: "1.0",
-	// อย่าลืมมาแก้ทุกครั้งที่เปิดปิด instance aws lightsail
-	Host:             "13.250.43.50:8080",
+	// อย่าลืมมาแก้ทุกครั้งที่เปิดปิด instance aws lightsail ไม่มีตัง attach
+	Host:             "3.1.206.91:8080",
 	BasePath:         "/",
 	Schemes:          []string{},
 	Title:            "Moodly API",
